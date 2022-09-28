@@ -1,0 +1,23 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+// Font Variables
+$font: (
+	'--font-fallback': system-ui,
+	'--font-family-base': (
+		'Roboto Slab',
+		serif,
+		var(--font-fallback),
+	),
+	'--font-family-heading': (
+		'Lato',
+		sans-serif,
+		var(--font-fallback),
+	),
+	'--font-size-base': 16px,
+	'--font-weight-black': 900,
+	'--font-weight-bold': 700,
+	'--font-weight-regular': 400,
+	'--font-weight-light': 300,
+);
