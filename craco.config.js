@@ -7,24 +7,24 @@ const SRC = `./src`;
 const aliases = alias(SRC);
 
 const resolvedAliases = Object.fromEntries(
-  Object.entries(aliases).map(([key, value]) => [
-    key,
-    path.resolve(__dirname, value),
-  ])
+	Object.entries(aliases).map(([key, value]) => [
+		key,
+		path.resolve(__dirname, value),
+	]),
 );
 
 module.exports = {
-  webpack: {
-    alias: resolvedAliases,
-  },
-  eslint: {
-    enable: false,
-  },
-  style: {
-    sass: {
-      loaderOptions: {
-        additionalData: `@use 'src/styles/global-styles.scss' as *;`,
-      },
-    },
-  },
+	webpack: {
+		alias: resolvedAliases,
+	},
+	eslint: {
+		enable: false,
+	},
+	style: {
+		sass: {
+			loaderOptions: {
+				additionalData: `@use 'src/styles/global-styles.scss' as *;`,
+			},
+		},
+	},
 };
