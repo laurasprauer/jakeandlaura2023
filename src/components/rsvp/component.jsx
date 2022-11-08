@@ -86,7 +86,7 @@ export const RSVP = ({ darkmode }) => {
 	};
 
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id={'rsvp'}>
 			<div className={styles.top}>
 				<div>
 					<h2>RSVP</h2>

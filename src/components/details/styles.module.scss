@@ -1,0 +1,189 @@
+.container {
+	background-color: var(--color-navy);
+	width: 100%;
+	@include container;
+	> div {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+
+	h2 {
+		color: var(--color-white);
+		font-family: var(--font-merry);
+		text-align: center;
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	h3 {
+		color: var(--color-white);
+		font-family: var(--font-lato);
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 18px;
+		letter-spacing: 1px;
+		margin: 10px 0;
+	}
+
+	strong {
+		color: var(--color-navy);
+	}
+
+	a {
+		text-decoration: underline;
+		color: var(--color-navy);
+		transition: var(--transition) color;
+		@include hover {
+			color: var(--color-blue);
+		}
+	}
+
+	.small {
+		font-size: 14px;
+		line-height: 20px;
+		opacity: 0.8;
+	}
+
+	.itineraryAndHotel {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+		> div {
+			&:first-child {
+				width: 60%;
+			}
+			&:last-child {
+				width: calc(40% - 30px);
+			}
+
+			@include media(680px, down) {
+				&:first-child {
+					width: 100%;
+				}
+				&:last-child {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.itinerary {
+		margin-top: 60px;
+		> div {
+			background-color: var(--color-white);
+
+			.item {
+				padding: 15px 20px;
+				background-color: #e2e4eb;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				&:nth-child(even) {
+					background-color: #eff0f3;
+				}
+				.time {
+					font-family: var(--font-lato);
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					position: relative;
+					width: 100px;
+
+					@include media($x-small, down) {
+						width: 80px;
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						top: -4px;
+						right: 0px;
+						height: 30px;
+						width: 2px;
+						background-color: var(--color-navy);
+						opacity: 0.2;
+						@include media($x-small, down) {
+							display: none;
+						}
+					}
+				}
+				.text {
+					font-family: var(--font-lato);
+					font-size: 16px;
+					margin-left: 10px;
+					color: var(--color-black);
+					font-weight: 600;
+				}
+				.icon {
+					margin-left: 20px;
+					width: 60px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					svg {
+						height: 30px;
+						margin: 0 auto;
+					}
+
+					@include media($x-small, down) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.hotel {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		> div {
+			background-color: var(--color-white);
+			padding: 20px;
+		}
+	}
+
+	.where {
+		margin-top: 60px;
+		> div {
+			border: 5px solid var(--color-white);
+			background-color: var(--color-white);
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-wrap: wrap;
+			> div {
+				&:first-child {
+					padding: 20px;
+					width: 40%;
+				}
+				&:last-child {
+					height: 300px;
+					width: 60%;
+					background-image: url('./venue.png');
+					background-size: cover;
+					background-position: center;
+				}
+
+				@include media(840px, down) {
+					&:first-child {
+						width: 50%;
+					}
+					&:last-child {
+						width: 50%;
+					}
+				}
+
+				@include media($small-lowest, down) {
+					&:first-child {
+						width: 100%;
+					}
+					&:last-child {
+						height: 300px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
