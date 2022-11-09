@@ -1,0 +1,34 @@
+.swiper-button-next,
+.swiper-button-prev {
+	color: var(--color-navy) !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	left: 0 !important;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right: 0 !important;
+}
+
+.swiper {
+	padding: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+	background: var(--color-navy) !important;
+}
+
+// @media (max-width: 600px) {
+// 	.swiper-button-next:after,
+// 	.swiper-button-prev:after {
+// 		font-size: 25px !important;
+// 	}
+// 	.swiper-button-next,
+// 	.swiper-button-prev {
+// 		width: calc(25px / 44 * 27) !important;
+// 		height: 25px !important;
+// 	}
+// }

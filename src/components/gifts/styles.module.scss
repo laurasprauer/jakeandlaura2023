@@ -1,0 +1,119 @@
+.container {
+	@include container;
+	max-width: 980px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 40px;
+
+	h2 {
+		color: var(--color-navy);
+		font-family: var(--font-merry);
+		text-align: center;
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 15px;
+	}
+
+	h3 {
+		color: var(--color-navy);
+		font-family: var(--font-lato);
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 18px;
+		letter-spacing: 1px;
+		margin: 10px 0;
+	}
+
+	.top {
+		p {
+			font-size: 20px;
+			color: var(--color-navy);
+			line-height: 30px;
+			text-align: center;
+			margin-top: 0;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.items {
+		margin-top: 60px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		> div {
+			margin-bottom: 80px;
+			width: calc(100% / 3 - 40px);
+
+			@include media($small-highest, down) {
+				width: 100%;
+				text-align: center;
+
+				h3,
+				p {
+					max-width: 500px;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+				}
+			}
+
+			> div {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				> a {
+					img {
+						max-width: 500px;
+						width: 100%;
+						border-radius: var(--border-radius);
+						box-shadow: var(--box-shadow);
+						margin-bottom: 20px;
+						transition: var(--transition) box-shadow,
+							var(--transition) transform;
+						transform: scale(1);
+						cursor: pointer;
+						@include hover {
+							box-shadow: var(--box-shadow-darker);
+							transform: scale(1.05);
+						}
+					}
+				}
+			}
+		}
+
+		p {
+			a {
+				text-decoration: underline;
+				color: var(--color-navy);
+				transition: var(--transition) color;
+				@include hover {
+					color: var(--color-blue);
+				}
+			}
+		}
+
+		.button {
+			display: inline-block;
+			text-decoration: none;
+			border: 0;
+			background-color: var(--color-navy);
+			color: var(--color-white);
+			text-transform: uppercase;
+			padding: 15px 30px;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			margin-top: 20px;
+			transition: var(--transition) background-color;
+			cursor: pointer;
+			@include hover {
+				background-color: var(--color-blue);
+			}
+		}
+	}
+}

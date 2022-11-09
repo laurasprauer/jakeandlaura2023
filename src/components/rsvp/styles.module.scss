@@ -158,6 +158,11 @@
 		font-weight: 500;
 		letter-spacing: 1px;
 		margin-top: 20px;
+		transition: var(--transition) background-color;
+		cursor: pointer;
+		@include hover {
+			background-color: var(--color-blue);
+		}
 	}
 
 	.error {
