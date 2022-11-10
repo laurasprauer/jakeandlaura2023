@@ -33,7 +33,7 @@ export const Main = () => {
 				<meta property="og:title" content="Jake & Laura Get Married" />
 				<meta property="og:description" content="Join us on our special day." />
 				<meta property="og:site_name" content="Jake & Laura 2023" />
-				<meta property="og:image" content={image} />
+				<meta property="og:image" key="og:image" content={image} />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:image" content={image} />
 				<meta name="image" content={image} />
