@@ -56,8 +56,9 @@
 			font-size: 18px;
 			user-select: none;
 			padding-left: 35px;
-			display: inline;
+			display: inline-block;
 			margin-right: 30px;
+			width: auto;
 
 			input {
 				position: absolute;

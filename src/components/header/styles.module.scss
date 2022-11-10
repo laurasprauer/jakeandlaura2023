@@ -71,10 +71,10 @@
 	}
 
 	.item {
-		padding: 20px;
+		padding: 25px 20px;
 
 		@include media($small, down) {
-			padding: 15px;
+			padding: 25px 15px;
 			&:first-child {
 				padding-left: 0px;
 			}
@@ -83,7 +83,7 @@
 			}
 		}
 		@include media($x-small, down) {
-			padding: 8px;
+			padding: 25px 8px;
 			&:first-child {
 				padding-left: 0px;
 			}
