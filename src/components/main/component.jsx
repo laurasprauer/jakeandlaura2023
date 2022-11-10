@@ -7,7 +7,7 @@ import Details from '@components/details';
 import Gifts from '@components/gifts';
 import Gallery from '@components/gallery';
 
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import styles from './styles.module.scss';
 
