@@ -7,14 +7,14 @@ import Details from '@components/details';
 import Gifts from '@components/gifts';
 import Gallery from '@components/gallery';
 
-import { Helmet } from 'react-helmet';
+import Helmet from 'react-helmet';
 
 import styles from './styles.module.scss';
 
 export const Main = () => {
 	const isBrowser = typeof window !== 'undefined';
 	const url = isBrowser ? window.location.href : 'https://jakeandlaura2023.com';
-	const image = 'https://jakeandlaura2023.com/images/share-image.png';
+	const image = '/images/share-image.png';
 
 	return (
 		<div className={styles.container}>
