@@ -14,7 +14,7 @@ import styles from './styles.module.scss';
 export const Main = () => {
 	const isBrowser = typeof window !== 'undefined';
 	const url = isBrowser ? window.location.href : 'https://jakeandlaura2023.com';
-	const image = '/images/share-image.png';
+	const image = 'https://jakeandlaura2023.com/images/share-image.png';
 
 	return (
 		<div className={styles.container}>
