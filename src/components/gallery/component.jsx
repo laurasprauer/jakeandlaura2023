@@ -32,11 +32,30 @@ export const Gallery = () => {
 					autoplay={{
 						delay: 4000,
 					}}
-					spaceBetween={0}
-					slidesPerView={1}
+					spaceBetween={20}
+					slidesPerView={2}
+					slidesPerGroup={2}
 					navigation
 					pagination={{ clickable: true }}
 				>
+					<SwiperSlide>
+						<img src="/images/photo-shoot-7.png" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src="/images/photo-shoot-5.png" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src="/images/photo-shoot-3.png" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src="/images/photo-shoot-4.png" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src="/images/photo-shoot-1.png" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src="/images/photo-shoot-6.png" />
+					</SwiperSlide>
 					<SwiperSlide>
 						<img src="/images/1.png" />
 					</SwiperSlide>

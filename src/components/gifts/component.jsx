@@ -52,6 +52,46 @@ export const Gifts = () => {
 				</div>
 				<div>
 					<div>
+						<a href="https://www.chaoc.org/" target="_blank" rel="noreferrer">
+							<img src="/images/chaoc.png" />
+						</a>
+					</div>
+					<h3>Congenital Heart Alliance of Cincinnati</h3>
+					<p>
+						<a href="https://www.chaoc.org/" target="_blank" rel="noreferrer">
+							CHAOC
+						</a>{' '}
+						is commited to helping patients and families impacted by congenital
+						heart defects - focused on funding groundbreaking research,
+						encouraging global collaboration, and promoting well-being
+						initiatives.
+					</p>
+					<p>
+						Laura has extended family directly impacted by CHD. This
+						organization supports local Cincinnati hospitals and runs a golf
+						camp for kids with heart defects.
+					</p>
+					<p>
+						<a
+							href="https://www.youtube.com/watch?v=NbPjxr-jSbs&ab_channel=CongenitalHeartAllianceofCincinnati"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Learn More
+						</a>{' '}
+						about CHAOC.
+					</p>
+					<a
+						className={styles.button}
+						href="https://www.chaoc.org/donate/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Donate
+					</a>
+				</div>
+				{/* <div>
+					<div>
 						<a
 							href="https://www.groundworkorv.org/"
 							target="_blank"
@@ -88,7 +128,7 @@ export const Gifts = () => {
 					>
 						Donate
 					</a>
-				</div>
+				</div> */}
 				<div>
 					<div>
 						<a href="https://prokids.org" target="_blank" rel="noreferrer">

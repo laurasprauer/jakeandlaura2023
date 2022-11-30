@@ -1,15 +1,14 @@
 .container {
-	min-height: 500px;
-	max-height: 700px;
+	min-height: 440px;
+	max-height: 670px;
 	overflow: hidden;
 	position: relative;
 	> div {
 		background-image: url('./bg-min.png');
-		background-size: cover;
-		background-position: center;
+		background-size: contain;
 		width: 100%;
 		padding-top: 65%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-		min-height: 500px;
+		min-height: 440px;
 		position: relative;
 		> div {
 			position: absolute;
@@ -17,6 +16,10 @@
 			left: 0;
 			bottom: 0;
 			right: 0;
+		}
+
+		@include media($large-lowest, down) {
+			background-size: cover;
 		}
 	}
 }
@@ -50,6 +53,7 @@
 		display: none;
 		width: 200px;
 		padding: 20px;
+		margin-bottom: -40px;
 		@include media($small-lowest, down) {
 			display: block;
 		}
