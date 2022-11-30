@@ -14,9 +14,9 @@ export const Header = () => {
 							<div className={styles.item}>
 								<a href="#rsvp">RSVP</a>
 							</div>
-							<div className={styles.item}>
+							{/* <div className={styles.item}>
 								<a href="#details">Details</a>
-							</div>
+							</div> */}
 							<div className={styles.logo}>
 								<SVG name="logo" />
 							</div>
