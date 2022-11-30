@@ -26,7 +26,7 @@ export const Gifts = () => {
 					</div>
 					<h3>Women Helping Women</h3>
 					<p>
-						Cincinnati based organization focused on crisis intervention and
+						Cincinnati-based organization focused on crisis intervention and
 						prevention advocacy for gender-based violence. Believes in serving
 						all survivors with a specific focus on marginalized groups.
 					</p>

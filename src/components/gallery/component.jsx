@@ -54,9 +54,6 @@ export const Gallery = () => {
 						<img src="/images/photo-shoot-1.png" />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src="/images/photo-shoot-6.png" />
-					</SwiperSlide>
-					<SwiperSlide>
 						<img src="/images/1.png" />
 					</SwiperSlide>
 					<SwiperSlide>
