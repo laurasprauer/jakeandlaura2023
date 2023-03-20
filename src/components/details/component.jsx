@@ -57,7 +57,7 @@ export const Details = () => {
 							</div>
 
 							<div className={styles.item}>
-								<div className={styles.time}>5:45PM</div>
+								<div className={styles.time}>6:00PM</div>
 								<div className={styles.icon}>
 									<SVG name="camera" />
 								</div>
@@ -65,7 +65,7 @@ export const Details = () => {
 							</div>
 
 							<div className={styles.item}>
-								<div className={styles.time}>6:15PM</div>
+								<div className={styles.time}>6:30PM</div>
 								<div className={styles.icon}>
 									<SVG name="cart" />
 								</div>
@@ -73,19 +73,19 @@ export const Details = () => {
 							</div>
 
 							<div className={styles.item}>
-								<div className={styles.time}>7:00PM</div>
+								<div className={styles.time}>7:15PM</div>
 								<div className={styles.icon}>
-									<SVG name="cake" />
+									<SVG name="dance" />
 								</div>
-								<div className={styles.text}>Dessert</div>
+								<div className={styles.text}>First Dance</div>
 							</div>
 
 							<div className={styles.item}>
 								<div className={styles.time}>7:45PM</div>
 								<div className={styles.icon}>
-									<SVG name="dance" />
+									<SVG name="cake" />
 								</div>
-								<div className={styles.text}>First Dance</div>
+								<div className={styles.text}>Dessert</div>
 							</div>
 
 							<div className={styles.item}>

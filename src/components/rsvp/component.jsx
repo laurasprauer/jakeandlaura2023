@@ -93,10 +93,10 @@ export const RSVP = ({ darkmode }) => {
 				</div>
 				<div>
 					<h3>We&apos;re excited to celebrate with you!</h3>
-					<h4>Kindly respond before March 11th.</h4>
+					<h4>Responses have been closed.</h4>
 				</div>
 			</div>
-			{success ? (
+			{/* {success ? (
 				<div className={styles.success}>
 					<h3>Your RSVP was submitted!</h3>
 					<p>
@@ -162,7 +162,7 @@ export const RSVP = ({ darkmode }) => {
 							);
 						})}
 				</form>
-			)}
+			)} */}
 		</div>
 	);
 };
